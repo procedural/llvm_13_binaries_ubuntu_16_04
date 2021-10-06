@@ -84,8 +84,8 @@ struct StratifiedLink {
 template <typename T> class StratifiedSets {
 public:
   StratifiedSets() = default;
-  StratifiedSets(StratifiedSets &&) = default;
-  StratifiedSets &operator=(StratifiedSets &&) = default;
+  //StratifiedSets(StratifiedSets &&) = default; // NOTE(Constantine)
+  //StratifiedSets &operator=(StratifiedSets &&) = default; // NOTE(Constantine)
 
   StratifiedSets(DenseMap<T, StratifiedInfo> Map,
                  std::vector<StratifiedLink> Links)
