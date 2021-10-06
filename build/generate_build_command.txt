@@ -1,0 +1,2 @@
+cd /home/constantine/Documents/llvm-project
+CC=clang-3.9 CXX=clang++-3.9 cmake -S llvm -B build -DLLVM_ENABLE_PROJECTS="clang;libcxx;libcxxabi" -DCMAKE_INSTALL_PREFIX=/home/constantine/Programs/LLVM -DCMAKE_BUILD_TYPE=Release
